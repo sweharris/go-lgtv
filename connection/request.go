@@ -50,3 +50,8 @@ type LaunchAppPayload struct {
 	ContentID  string      `json:"contentId"`
 	Parameters interface{} `json:"params"`
 }
+
+// Payload to createToast
+type WriteToastPayload struct {
+	Message string `json:"message"`
+}

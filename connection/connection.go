@@ -303,5 +303,6 @@ func getPermissions() []string {
 		permissionReadRunningApps,
 		permissionReadInstalledApps,
 		permissionReadInputList,
+		permissionWriteToast,
 	}
 }

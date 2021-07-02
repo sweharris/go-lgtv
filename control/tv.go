@@ -344,6 +344,14 @@ func (tv *LgTv) LaunchApp(appID string) (string, error) {
 	return respPayload.SessionID, nil
 }
 
+// Sends a Toast message to the TV
+func (tv *LgTv) WriteToast(message string) error {
+	payload := connection.WriteToastPayload{
+		Message: message,
+	}
+	return tv.doRequest(uriWriteToast, payload, nil)
+}
+
 // Get the TV Power state
 func (tv *LgTv) PowerState() (string, error) {
 	var respPayload connection.PowerState

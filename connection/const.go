@@ -24,4 +24,5 @@ const (
 	permissionReadRunningApps    = "READ_RUNNING_APPS"
 	permissionReadInstalledApps  = "READ_INSTALLED_APPS"
 	permissionReadInputList      = "READ_INPUT_DEVICE_LIST"
+	permissionWriteToast         = "WRITE_NOTIFICATION_TOAST"
 )

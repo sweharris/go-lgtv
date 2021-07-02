@@ -23,6 +23,8 @@ const (
 	uriGetCurrentChannel     = "ssap://tv/getCurrentChannel"
 	uriGetChannelProgramInfo = "ssap://tv/getChannelProgramInfo"
 
+	uriWriteToast = "ssap://system.notifications/createToast"
+
 	uriListApps = "ssap://com.webos.applicationManager/listApps"
 
 	uriLaunchApp = "ssap://system.launcher/launch"
