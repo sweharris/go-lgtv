@@ -8,9 +8,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/dhickie/go-lgtv/control"
-	iputil "github.com/dhickie/go-lgtv/util/ip"
-	xmlutil "github.com/dhickie/go-lgtv/util/xml"
+	"github.com/sweharris/go-lgtv/control"
+	iputil "github.com/sweharris/go-lgtv/util/ip"
+	xmlutil "github.com/sweharris/go-lgtv/util/xml"
 )
 
 const openPort = 1426
