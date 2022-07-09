@@ -1,5 +1,17 @@
 # GO-LGTV
 
+## sweharris fork
+
+This fork is my version which adds slightly new functionality for my OLED
+TV.  I attempted to PR to upstream but it didn't get any response.  So...
+
+I've added the ability to send Toast messages and additional checking on
+the power state of the TV ('cos OLED TVs go into "Active Standby" and that
+caused the original code to turn _on_ when we wanted to turn off).
+
+Everything else is as per the original author, except the "install" instructions
+below.
+
 ## Introduction
 
 Go-LgTv is a Golang package for discovering and controlling LG Smart TVs. This has been built against version 3.5 of WebOS, which uses a websocket connection for communication. In the past, LG's Smart TVs used their UDAP protocol for communication, but this changed at some undisclosed point. I therefore can't say exactly which versions of WebOS this will work with - it has been tested on version 3.5 running on a C7V 2017 Model TV.
@@ -9,7 +21,7 @@ Go-LgTv is a Golang package for discovering and controlling LG Smart TVs. This h
 Get it:
 
 ```
-go get github.com/dhickie/go-lgtv
+go get github.com/sweharris/go-lgtv
 ```
 
 ## Examples
@@ -18,8 +30,8 @@ go get github.com/dhickie/go-lgtv
 package main
 
 import (
-	"github.com/dhickie/go-lgtv/control"
-	"github.com/dhickie/go-lgtv/discovery"
+	"github.com/sweharris/go-lgtv/control"
+	"github.com/sweharris/go-lgtv/discovery"
 )
 
 func main() {
