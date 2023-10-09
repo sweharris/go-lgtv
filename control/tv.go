@@ -382,7 +382,7 @@ func (tv *LgTv) TurnOn() error {
 	// Make sure the TV has the MAC address and broadcast address specified
 	if len(tv.broadcastAddr) > 0 && tv.mac != "" {
 		// Send the WOL magic packet for the TV's mac address to the LANs broadcast address
-		return wol.MagicWake(tv.mac, tv.broadcastAddr.String())
+		return gowol.MagicWake(tv.mac, tv.broadcastAddr.String())
 	}
 
 	return ErrInsufficientNetworkDetails
