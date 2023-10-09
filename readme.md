@@ -9,6 +9,9 @@ I've added the ability to send Toast messages and additional checking on
 the power state of the TV ('cos OLED TVs go into "Active Standby" and that
 caused the original code to turn _on_ when we wanted to turn off).
 
+The library now uses wss on port 3001 since it seems LG is removing the
+ws on port 3000 (at least it no longer works on my TV).
+
 Everything else is as per the original author, except the "install" instructions
 below.
 
