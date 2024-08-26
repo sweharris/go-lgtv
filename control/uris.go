@@ -8,6 +8,9 @@ const (
 	uriSetMute    = "ssap://audio/setMute"
 	uriGetMute    = "ssap://audio/getMute"
 
+	uriGetSoundOutput = "ssap://com.webos.service.apiadapter/audio/getSoundOutput"
+	uriSetSoundOutput = "ssap://audio/changeSoundOutput"
+
 	uriPlay        = "ssap://media.controls/play"
 	uriPause       = "ssap://media.controls/pause"
 	uriStop        = "ssap://media.controls/stop"

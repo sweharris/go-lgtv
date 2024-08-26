@@ -44,6 +44,11 @@ type SwitchInputPayload struct {
 	InputID string `json:"inputId"`
 }
 
+// SwitchOutputPayload is the payload sent with a SwitchOutput request
+type SwitchOutputPayload struct {
+	Output string `json:"output"`
+}
+
 // LaunchAppPayload is the payload send with a "LaunchApp" request
 type LaunchAppPayload struct {
 	ID         string      `json:"id"`

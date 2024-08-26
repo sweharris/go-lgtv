@@ -289,6 +289,14 @@ func (tv *LgTv) SwitchInput(inputID string) error {
 	return tv.doRequest(uriSwitchInput, payload, nil)
 }
 
+// Set the audio output device
+func (tv *LgTv) SwitchOutput(output string) error {
+	payload := connection.SwitchOutputPayload{
+		Output: output,
+	}
+	return tv.doRequest(uriSetSoundOutput, payload, nil)
+}
+
 // ListExternalInputs lists the external input devices for the TV
 func (tv *LgTv) ListExternalInputs() ([]Input, error) {
 	var respPayload connection.GetExternalInputListResponsePayload
